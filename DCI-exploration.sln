@@ -1,0 +1,12 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TraditionalOOP", "TraditionalOOP", "{E73D4F4A-3E61-4AFD-9AC0-215886FF903D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UltimateDCI", "UltimateDCI", "{9649C19E-7BFA-4CC2-99F7-8C8C867C4F91}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
