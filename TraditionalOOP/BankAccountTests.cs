@@ -4,7 +4,7 @@
     using FluentAssertions;
     using Xunit;
 
-    public class Tests
+    public class BankAccountTests
     {
         private readonly BankAccount _bankAccount = new BankAccount();
 
