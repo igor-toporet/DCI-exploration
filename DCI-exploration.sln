@@ -1,11 +1,32 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TraditionalOOP", "TraditionalOOP", "{E73D4F4A-3E61-4AFD-9AC0-215886FF903D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraditionalOOP", "TraditionalOOP\TraditionalOOP.csproj", "{1834C862-9889-47D0-B76D-16DE33F39F58}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UltimateDCI", "UltimateDCI", "{9649C19E-7BFA-4CC2-99F7-8C8C867C4F91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltimateDCI", "UltimateDCI\UltimateDCI.csproj", "{42F3EECB-FF50-4A97-9423-F100BAA82ED1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C10D3570-4897-4B10-B323-94D5A43B0762}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1834C862-9889-47D0-B76D-16DE33F39F58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1834C862-9889-47D0-B76D-16DE33F39F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1834C862-9889-47D0-B76D-16DE33F39F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1834C862-9889-47D0-B76D-16DE33F39F58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F3EECB-FF50-4A97-9423-F100BAA82ED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F3EECB-FF50-4A97-9423-F100BAA82ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F3EECB-FF50-4A97-9423-F100BAA82ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F3EECB-FF50-4A97-9423-F100BAA82ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
