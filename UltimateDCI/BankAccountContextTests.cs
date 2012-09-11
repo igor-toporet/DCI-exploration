@@ -9,33 +9,26 @@
     {
         // ReSharper disable InconsistentNaming
 
-        private readonly Guid _accountOneId;
-        private readonly Guid _accountTwoId;
-        private readonly IDictionary<Guid, BankAccount> _accountsRegistry;
+        private readonly IDictionary<Guid, BankAccount> _accountsRegistry=new Dictionary<Guid, BankAccount>();
+        private BankAccount checkingAccount = new BankAccount(100);
+        private BankAccount savingsAccount = new BankAccount();
 
         public BankAccountContextTests()
         {
-            var account1 = new BankAccount(100);
-            var account2 = new BankAccount();
-            _accountOneId = account1.Id;
-            _accountTwoId = account2.Id;
-            _accountsRegistry = new Dictionary<Guid, BankAccount>
-                                       {
-                                           {_accountOneId,account1},
-                                           {_accountTwoId,account2},
-                                       };
+            _accountsRegistry.Add(checkingAccount.Id,checkingAccount);
+            _accountsRegistry.Add(savingsAccount.Id,savingsAccount);
         }
 
         [Fact]
         public void Play_UseCase_TransferFunds()
         {
-            var accountContext = new BankAccountContext(_accountsRegistry, _accountOneId, _accountTwoId);
+            var accountContext = new BankAccountContext(
+                _accountsRegistry, checkingAccount.Id, savingsAccount.Id);
 
             accountContext.TransferFunds(70);
 
-
-            _accountsRegistry[_accountOneId].Balance.Should().Be(30);
-            destAcc.Balance.Should().Be(70);
+            checkingAccount.Balance.Should().Be(30);
+            savingsAccount.Balance.Should().Be(70);
         }
 
         // ReSharper restore InconsistentNaming
